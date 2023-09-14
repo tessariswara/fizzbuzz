@@ -5,7 +5,8 @@ button.addEventListener("click", function () {
   const input = document.getElementById("input");
   const value = parseInt(input.value);
   let out = value;
-  if (value === 0) {
+  console.log(value);
+  if (value === 0 || isNaN(out)) {
     console.log("invalid input");
     output.innerHTML += "invalid input" + "<br>";
     output.style.color = "red";
