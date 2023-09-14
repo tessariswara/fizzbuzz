@@ -8,9 +8,7 @@ button.addEventListener("click", function () {
   console.log(value);
   if (value === 0 || isNaN(out)) {
     const outhtml = document.createElement("p");
-    outhtml.style.margin = 0;
-    outhtml.style.padding = 0;
-    outhtml.textContent = "Invalid input";
+    outhtml.textContent = "invalid input";
     outhtml.style.color = "red";
     output.appendChild(outhtml);
   } else {
@@ -27,8 +25,6 @@ button.addEventListener("click", function () {
       console.log(value);
     }
     const outhtml = document.createElement("p");
-    outhtml.style.margin = 0;
-    outhtml.style.padding = 0;
     outhtml.textContent = out;
     outhtml.style.color = "black";
     output.appendChild(outhtml);
