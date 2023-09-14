@@ -7,9 +7,12 @@ button.addEventListener("click", function () {
   let out = value;
   console.log(value);
   if (value === 0 || isNaN(out)) {
-    console.log("invalid input");
-    output.innerHTML += "invalid input" + "<br>";
-    output.style.color = "red";
+    const outhtml = document.createElement("p");
+    outhtml.style.margin = 0;
+    outhtml.style.padding = 0;
+    outhtml.textContent = "Invalid input";
+    outhtml.style.color = "red";
+    output.appendChild(outhtml);
   } else {
     if (value % 3 === 0 && value % 5 === 0) {
       out = "FizzBuzz!";
@@ -23,7 +26,11 @@ button.addEventListener("click", function () {
     } else {
       console.log(value);
     }
-    output.innerHTML += out + "<br>";
-    output.style.color = "black";
+    const outhtml = document.createElement("p");
+    outhtml.style.margin = 0;
+    outhtml.style.padding = 0;
+    outhtml.textContent = out;
+    outhtml.style.color = "black";
+    output.appendChild(outhtml);
   }
 });
