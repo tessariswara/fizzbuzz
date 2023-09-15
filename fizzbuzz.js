@@ -3,7 +3,8 @@ const output = document.getElementById("output");
 
 button.addEventListener("click", function () {
   const input = document.getElementById("input");
-  const value = parseInt(input.value);
+  const value = input.value;
+  console.log(value);
   let out = value;
   console.log(value);
   if (value === 0 || isNaN(out)) {
